@@ -53,7 +53,7 @@ a[data-tooltip-position="right"]:after, a[data-tooltip-position="left"]:after, a
   border-radius: 4px;
   color: #fff;
   padding: 5px;
-  text-align: left;
+  text-align: center;
   transition: all 0.2s ease-in-out;
 }
 
