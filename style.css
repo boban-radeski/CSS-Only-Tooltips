@@ -1,0 +1,134 @@
+﻿/*
+    CSS Only Tooltips
+    Author: Boban Radeski, HASELT
+    Date: 08.26.2016
+    Version: 1.0.0
+*/
+/* 
+    Configurate Tooltip according to your need/design
+    HOW TO CONFIGURE THE TOOLTIP:
+    Insert/edit the value of the following variables to achieve the desired look of yout tooltip
+        1. the width value of the tooltip: any number > 0
+        2. set animation you like
+        3. background color of the tooltip, any color in HEX color
+        4. color of the text in the tooltip
+        5. padding of text inside the tooltip, any value > 0
+        6. text aling of the text in the tooltip: left, right, center
+        7. border radisu of the tooltip, any number > 0
+        9. the triangle next to tooltip, any value > 0
+        9. the triangle background color, any HEX color
+       10. tooltip font sizes
+*/
+/* position logic down here */
+a[data-tooltip-position="right"]:after, a[data-tooltip-position="right"]:before, a[data-tooltip-position="left"]:after, a[data-tooltip-position="left"]:before, a[data-tooltip-position="top"]:after, a[data-tooltip-position="top"]:before, a[data-tooltip-position="bottom"]:after, a[data-tooltip-position="bottom"]:before {
+  opacity: 0;
+  z-index: -1;
+}
+
+a[data-tooltip]:hover:after,
+a[data-tooltip]:hover:before {
+  opacity: 1;
+  z-index: 9999;
+}
+
+@media (max-width: 768px) {
+  a[data-tooltip-position="right"]:after, a[data-tooltip-position="right"]:before, a[data-tooltip-position="left"]:after, a[data-tooltip-position="left"]:before, a[data-tooltip-position="top"]:after, a[data-tooltip-position="top"]:before, a[data-tooltip-position="bottom"]:after, a[data-tooltip-position="bottom"]:before {
+    display: none;
+  }
+}
+
+/* %common tooltip style */
+a[data-tooltip-position="right"]:before, a[data-tooltip-position="left"]:before, a[data-tooltip-position="top"]:before, a[data-tooltip-position="bottom"]:before {
+  content: "";
+  position: absolute;
+  transition: all 0.2s ease-in-out;
+}
+
+a[data-tooltip-position="right"]:after, a[data-tooltip-position="left"]:after, a[data-tooltip-position="top"]:after, a[data-tooltip-position="bottom"]:after {
+  content: attr(data-tooltip);
+  width: 200px;
+  position: absolute;
+  font-size: 16px;
+  background: rgba(65, 133, 217, 0.94);
+  border-radius: 0px;
+  color: #fff;
+  padding: 8px;
+  text-align: left;
+  transition: all 0.2s ease-in-out;
+}
+
+/* ===================tooltip position =================== */
+/* Right Tooltip */
+a[data-tooltip-position="right"] {
+  position: relative;
+}
+
+a[data-tooltip-position="right"]:after {
+  left: calc(100% + 0px + 15px);
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+a[data-tooltip-position="right"]:before {
+  border-top: 7.5px solid transparent;
+  border-right: 15px solid rgba(65, 133, 217, 0.76);
+  border-bottom: 7.5px solid transparent;
+  left: calc(100% + 0px);
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Tooltip left */
+a[data-tooltip-position="left"]:after {
+  right: calc(100% + 15px);
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+a[data-tooltip-position="left"]:before {
+  border-top: 7.5px solid transparent;
+  border-left: 15px solid rgba(65, 133, 217, 0.76);
+  border-bottom: 7.5px solid transparent;
+  right: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Tooltip top */
+a[data-tooltip-position="top"]:after {
+  bottom: calc(100% + 15px);
+  left: calc( 50% - (200px / 2 ));
+}
+
+a[data-tooltip-position="top"]:before {
+  border-top: 15px solid rgba(65, 133, 217, 0.76);
+  border-right: 15px solid transparent;
+  border-left: 15px solid transparent;
+  bottom: 100%;
+  left: calc(50% - (15px / 2));
+}
+
+/* Tooltip bottom */
+a[data-tooltip-position="bottom"]:after {
+  top: calc(100% + 15px);
+  left: calc( 50% - (200px / 2 ));
+}
+
+a[data-tooltip-position="bottom"]:before {
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 15px solid rgba(65, 133, 217, 0.76);
+  top: 100%;
+  left: calc(50% - (15px / 2));
+}
+
+a[data-tooltip] {
+  position: relative;
+}
+
+/* if data tooltip is empty */
+a[data-tooltip=""]:after {
+  content: "Loading...";
+}
+
+/*# sourceMappingURL=style.css.map */
