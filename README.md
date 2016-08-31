@@ -99,5 +99,8 @@ result with No JS, just CSS/SCSS.
 </html>
 ```
 
+### If you are filing tooltips using AJAX and ``` data-tooltip="" ``` is empty, the tooltip will show message **Loading...** instead of displaying nothing
+
+#### Note: Do not use this tooltip on full width layout. If the tooltip link is on the left:0 of the screen and ``` data-tooltip-position="left" ``` the tooltip will not be visible. Same for position right.
 
 ### Demo on [codepen.io!](http://codepen.io/anon/pen/akgAwy)
