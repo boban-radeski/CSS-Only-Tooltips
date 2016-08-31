@@ -24,13 +24,13 @@
 
 $tooltip-width: 200px;
 $tooltip-animation: all .2s ease-in-out;
-$tooltip-bgcolor: rgba(65, 133, 217, 0.94);
+$tooltip-bgcolor: rgba(0, 0, 0, 0.8);
 $tooltip-text-color: #fff;
-$tooltip-padding: 8px;
+$tooltip-padding: 5px;
 $tooltip-text-align: left;
-$tooltip-border-radius: 0px;
-$tooltip-triangle-size: 15px;
-$tooltip-triangle-bgcolor: rgba(65, 133, 217, 0.76);
+$tooltip-border-radius: 4px;
+$tooltip-triangle-size: 10px;
+$tooltip-triangle-bgcolor: rgba(0, 0, 0, 0.8);
 $tooltip-font-size: 16px;
 
 /* position logic down here */
