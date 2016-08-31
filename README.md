@@ -1,7 +1,7 @@
 # CSS-Only-Tooltips
-Custom implementation of tooltips using SASS
-If you're tired too of including one JavaScipt and one CSS file to your project just to use tooltips, here's a way to acomplish the same
-result with No JS, just CSS/SCSS.
+Custom implementation of tooltips using only SASS. 
+If you're tired too of including one JavaScript and one CSS file to your project just to use tooltips, here's a way to accomplish the same
+result with No JS, just (S)CSS.
 
 ## Include style.scss into your SASS module architecture 
   For example: ``` @include style.scss ``` in your main SCSS file, for example main.scss
