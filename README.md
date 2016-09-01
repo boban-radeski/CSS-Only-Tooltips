@@ -1,12 +1,14 @@
 # CSS-Only-Tooltips
 Custom implementation of tooltips using only SASS. 
-If you're tired too of including one JavaScript and one CSS file to your project just to use tooltips, here's a way to accomplish the same
+For those who are tired of including one JavaScript and one CSS (2 requests) file to your project just to use tooltips, here's a way to accomplish the same
 result with No JS, just (S)CSS.
+
+# Usage
 
 ## Include style.scss into your SASS module architecture 
   For example: ``` @include style.scss ``` in your main SCSS file, for example main.scss
   
-  In style.scss there are variables the helps to configure the tooltip according to your design needs: 
+  In style.scss you can find variables the helps to configure the tooltip according to your design needs: 
   <dl>
      <dt> $tooltip-width: `200px; `</dt>
      <dt> $tooltip-animation: ` all .2s ease-in-out; ` </dt>
@@ -20,26 +22,26 @@ result with No JS, just (S)CSS.
      <dt> $tooltip-font-size: ` 16px; ` </dt>
   </dl>    
 
-## In your HTML view add the following code line with data- attributes
-#### Right positined tooltip, displayed right from the link:
+## In your HTML view add the following code lines with **data-** attributes
+#### Right positiоned tooltip, displayed right from the link:
 ```
 <a href="#" data-tooltip-position="right" data-tooltip="this tooltip is made with nothing but the CSS">
     right tooltip
 </a>
 ```
-#### Left positined tooltip, displayed left from the link:
+#### Left positiоned tooltip, displayed left from the link:
 ```
 <a href="#" data-tooltip-position="left" data-tooltip="this tooltip is made with nothing but the CSS">
     left tooltip
 </a>
 ```
-#### Top positined tooltip, displayed on top of the link:
+#### Top positiоned tooltip, displayed on top of the link:
 ```
 <a href="#" data-tooltip-position="top" data-tooltip="this tooltip is made with nothing but the CSS">
     top tooltip
 </a>
 ```
-#### Bottom positined tooltip, displayed on bottom of the link:
+#### Bottom positiоned tooltip, displayed on bottom of the link:
 ```
 <a href="#" data-tooltip-position="bottom" data-tooltip="this tooltip is made with nothing but the CSS">
     bottom tooltip
