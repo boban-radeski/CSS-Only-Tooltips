@@ -3,6 +3,8 @@ Custom implementation of tooltips using only SASS.
 For those who are tired of including one JavaScript and one CSS (2 requests) file to your project just to use tooltips, here's a way to accomplish the same
 result with No JS, just (S)CSS.
 
+### Demo on [codepen.io!](http://codepen.io/anon/pen/akgAwy)
+
 # Usage
 
 ## Include style.scss into your SASS module architecture 
@@ -105,4 +107,3 @@ result with No JS, just (S)CSS.
 
 #### Note: Do not use this tooltip on full width layout. If the tooltip link is on the left:0 of the screen and ``` data-tooltip-position="left" ``` the tooltip will not be visible. Same for position right.
 
-### Demo on [codepen.io!](http://codepen.io/anon/pen/akgAwy)
