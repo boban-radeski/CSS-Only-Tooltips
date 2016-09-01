@@ -6,7 +6,7 @@ result with No JS, just (S)CSS.
 ## Include style.scss into your SASS module architecture 
   For example: ``` @include style.scss ``` in your main SCSS file, for example main.scss
   
-  In style.scss there are variables the helps to configure the tooltip according to our or design needs: 
+  In style.scss there are variables the helps to configure the tooltip according to your design needs: 
   <dl>
      <dt> $tooltip-width: `200px; `</dt>
      <dt> $tooltip-animation: ` all .2s ease-in-out; ` </dt>
